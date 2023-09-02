@@ -26,8 +26,8 @@ export default function Home() {
           <br />
         </p>
         <p className='text-sm text-gray-600'>
-          So that&apos;s a simple intro by me, you&apos;ve already come here
-          visiting my website so here&apos;s I give you a tea {tea}
+          So that&apos;s a simple intro by me. You&apos;ve already come here
+          visiting my website, here&apos;s I give you a tea {tea}
           <br />
           Welcome to my website and feel free to discover more thing&apos;s
           about me here {smile}
