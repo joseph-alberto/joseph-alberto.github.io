@@ -10,7 +10,7 @@ type LinksType = {
 
 const links: LinksType = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/" },
+  { name: "About", path: "/about" },
   { name: "Portfolio", path: "/" },
 ]
 
