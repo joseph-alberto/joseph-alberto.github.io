@@ -5,11 +5,11 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      icon: (<FaGithub size={18} className='hover:text-teal-500 hover:transition-colors transition-colors'/>),
+      icon: (<FaGithub size={18} className='hover:text-cyan-500 hover:transition-colors transition-colors'/>),
       url: "https://github.com/joseph-alberto",
     },
     {
-      icon: (<FaLinkedin size={19} className='hover:text-teal-500 hover:transition-colors transition-colors'/>),
+      icon: (<FaLinkedin size={19} className='hover:text-cyan-500 hover:transition-colors transition-colors'/>),
       url: "https://linkedin.com/in/joseph-alberto",
     },
   ]
