@@ -20,9 +20,7 @@ const Page = (props: Props) => {
         Portfolio
       </h1>
       <p className='text-sm'>
-        Over here you can see some of the work I&apos;ve created so far, but
-        several projects are made for company that I worked on so I can&apos;t
-        publish the source code here, please take a look *thumb*.
+        Over here you can see some of the work I&apos;ve created so far. Some project is made for my self and some of it&aposo;s for the company or someone who ask me to create the application for their needs, please take a look *eye*.
       </p>
       <div className='mt-8'>
         <PortfolioContainer data={portfolios} />

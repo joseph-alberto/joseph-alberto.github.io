@@ -16,11 +16,19 @@
     "description": "Work in Taniyuk Project as a Head Development, to create application that bridging rubber smallholder directy to industry through an application. "
   },
   {
-    "image_path": "/images/portfolio/github-repository-explorer.png",
-    "title": "Github Repository Explorer",
-    "link": "https://joseph-alberto.github.io/github-repositories-explorer/",
+    "image_path": "/images/portfolio/live-attendance.png",
+    "title": "Course Attendance",
+    "link": false,
     "year": "2022",
-    "type": "Self Project",
-    "description": "Github repository explorer is a simple application to searching github repository by username. It made with TypeScript with React JS."
+    "type": "Freelance Project",
+    "description": "Application for manage the coruse attendance on Palembang. Where they can "
+  },
+  {
+    "image_path": "/images/portfolio/live-attendance.png",
+    "title": "SMOL",
+    "link": false,
+    "year": "2021",
+    "type": "Freelance Project",
+    "description": "SMOL(Sistem Magang Online) is a website-based application for University of Multi Data Palembang where they can post internship vacancies, and manage students to apply for these vacancies"
   }
 ]

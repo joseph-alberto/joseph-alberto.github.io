@@ -3,6 +3,6 @@ export interface Portfolio {
   title: string
   year: string
   type: string
-  link: string
+  link: string | boolean
   description: string
 }
