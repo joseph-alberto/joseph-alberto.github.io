@@ -14,7 +14,8 @@ const PortfolioCard = ({portfolio}: Props) => {
       <div className='min-w-40 flex flex-col gap-4 overflow-hidden rounded-xl shadow-lg hover:shadow-lg hover:shadow-cyan-700/40 hover:-translate-y-2 transition-transform'>
         <div className='relative justify-self-center'>
           <Image
-            src={portfolio.image}
+            src={`${process.env.NEXT_PUBLIC_URL}${portfolio.image_path}`}
+            priority={true}
             alt='img'
             className='h-60'
             width={0}
