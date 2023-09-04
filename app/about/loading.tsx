@@ -1,10 +1,11 @@
+import Container from '@/src/components/Container'
 import React from 'react'
 
 type Props = {}
 
 const Loading = (props: Props) => {
   return (
-    <div className='container mx-auto'>Loading...</div>
+    <Container className='py-8'>Loading...</Container>
   )
 }
 
