@@ -39,24 +39,22 @@ export default function Home() {
           from Palembang
         </p>
         <p className='text-sm text-gray-600'>
-          Basically I&apos;m just an ordinary man, who writing ideas into a
-          bunch of code.
+          Basically, I&apos;m just an ordinary man. I wrote ideas into a
+          bunch of code,
           <br />
-          Passionate to writing neat, clean, and sensible code with a new modern
-          programming technology.
+          passionate to structure neat, clean, and sensible program with a new technique for an advanced society.
           <br />
         </p>
         <p className='text-sm text-gray-600'>
-          So that&apos;s a simple intro by me. You&apos;ve already come here
-          visiting my website, here&apos;s I give you a tea {tea}
+          So, that&apos;s our small chat. You&apos;ve been here
+          looking through my work result. Then, let me spill the tea {tea}.
           <br />
-          Welcome to my website and feel free to discover more thing&apos;s
-          about me here {smile}
+          Welcome to my art-work and don&apos;t hesitate to dig more about me {smile}.
         </p>
         <div className='flex gap-4 text-sm'>
           <Link href='/portfolio'>
             <button className='bg-cyan-400 text-white py-2 px-4 rounded-md hover:shadow-md hover:-translate-y-1 hover:shadow-cyan-400/50 hover:transition-transform transition-transform'>
-              Look at my work
+              Work Result
             </button>
           </Link>
           <Link href='/about'>
@@ -66,7 +64,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className='bg-slate-900 h-80 rounded-lg'>To code</div>
+      {/* <div className='bg-slate-900 h-80 rounded-lg'>To code</div> */}
     </Container>
   )
 }

@@ -16,14 +16,12 @@ const Page = (props: Props) => {
       >
         About
       </h1>
-      <div className="flex flex-col gap-4 place-items-center mb-32">
-        <Image 
-          src={WIPImg}
-          alt='WIP'
-          width={200}
-        />
-        <h1 className="text-4xl font-bold text-gray-800">*UNDER CONSTRUCTION*</h1>
-        <p className="text-3xl font-medium">Come back soon...</p>
+      <div className='flex flex-col gap-4 place-items-center mb-32'>
+        <Image src={WIPImg} alt='WIP' width={200} />
+        <h1 className='text-4xl font-bold text-gray-800'>
+          *UNDER CONSTRUCTION*
+        </h1>
+        <p className='text-3xl font-medium'>Come back soon...</p>
         {/* Bio:
       I'm Joseph Alberto a Software Engineer, currenlty I work Fulltime in Taniyuk as a Head of Development
 
@@ -31,7 +29,14 @@ const Page = (props: Props) => {
 
       Why I choose to become a Software Engineer:
 
-      About This Website: */}
+      About This Website: 
+      1. Bio
+2. Why I choose to become a Software Engineer
+3. Career
+4. This Website
+5. Technology
+6. Social Media/Contact
+      */}
       </div>
     </Container>
   )
