@@ -1,7 +1,7 @@
 export interface Portfolio {
   image_path: string
   title: string
-  year: number
+  year: string
   type: string
   link: string
   description: string
