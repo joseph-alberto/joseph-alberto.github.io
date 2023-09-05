@@ -19,16 +19,32 @@
     "image_path": "/images/portfolio/live-attendance.png",
     "title": "Course Attendance",
     "link": false,
-    "year": "2022",
+    "year": "2021",
     "type": "Freelance Project",
-    "description": "Application for manage the coruse attendance on Palembang. Where they can "
+    "description": "Application for manage attendanced in course at Palembang."
   },
   {
-    "image_path": "/images/portfolio/live-attendance.png",
+    "image_path": "/images/portfolio/financial.png",
+    "title": "Financial App",
+    "link": false,
+    "year": "2021",
+    "type": "Freelance Project",
+    "description": "Financial App is a website-based application for managing fund allocation in a company."
+  },
+  {
+    "image_path": "/images/portfolio/smol.png",
     "title": "SMOL",
     "link": false,
     "year": "2021",
     "type": "Freelance Project",
     "description": "SMOL(Sistem Magang Online) is a website-based application for University of Multi Data Palembang where they can post internship vacancies, and manage students to apply for these vacancies"
+  },
+  {
+    "image_path": "/images/portfolio/pln.png",
+    "title": "PEAR - UPDL PLN Application",
+    "link": false,
+    "year": "2021",
+    "type": "Company Project",
+    "description": "Internship in UPDL PLN Palembang, created E-learning web-based application for stundent in UPDL PLN."
   }
 ]
