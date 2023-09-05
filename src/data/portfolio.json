@@ -1,19 +1,19 @@
 [
   {
-    "image_path": "/images/portfolio/github-repository-explorer.png",
-    "title": "Github Repository Explorer",
-    "link": "https://joseph-alberto.github.io/github-repositories-explorer/",
-    "year": "2022",
-    "type": "Self Project",
-    "description": "Github repository explorer is a simple application to searching github repository by username. It made with TypeScript with React JS."
-  },
-  {
     "image_path": "/images/portfolio/taniyuk.png",
     "title": "Taniyuk",
     "link": "https://taniyuk.com/",
     "year": "2021-2023",
     "type": "Company Project",
     "description": "Work in Taniyuk Project as a Head Development, to create application that bridging rubber smallholder directy to industry through an application. "
+  },
+  {
+    "image_path": "/images/portfolio/github-repository-explorer.png",
+    "title": "Github Repository Explorer",
+    "link": "https://joseph-alberto.github.io/github-repositories-explorer/",
+    "year": "2022",
+    "type": "Self Project",
+    "description": "Github repository explorer is a simple application to searching github repository by username. It made with TypeScript with React JS."
   },
   {
     "image_path": "/images/portfolio/live-attendance.png",
