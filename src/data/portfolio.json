@@ -15,7 +15,7 @@
     "title": "Github Repository Explorer",
     "year": "2022",
     "type": "Self Project",
-    "description": "Github repository explorer is a simple application to search github repository by username. It made with TypeScript with React JS."
+    "description": "Github repository explorer is a simple application to search github repository by username. It made with TypeScript and React JS."
   },
   {
     "image_path": "/images/portfolio/live-attendance.png",
