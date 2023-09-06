@@ -20,7 +20,7 @@ const Page = (props: Props) => {
         Portfolio
       </h1>
       <p className='text-sm'>
-        Over here you can see some of the work I&apos;ve created so far. Some project is made for my self and some of it&apos;s for the company or someone who ask me to create the application for their needs, please take a look *eye*.
+      Step into my portfolio, a curated showcase of my work that spans personal passion projects and meaningful collaborations with esteemed organizations. I{`'`}m thrilled to share these achievements with you, and I hope you find inspiration within these pages.
       </p>
       <div className='mt-6'>
         <PortfolioContainer data={portfolios} />

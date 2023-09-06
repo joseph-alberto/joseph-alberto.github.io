@@ -28,9 +28,9 @@ const Header = ({}: Props) => {
         </h1>
         <ul className='gap-8 items-center hidden sm:flex'>
           {links.map((link, i) => (
-            <li className='text-sm' key={i}>
-              <Link href={link.path}>{link.name}</Link>
-            </li>
+            <Link key={i} href={link.path}>
+              <li className='text-sm'>{link.name}</li>
+            </Link>
           ))}
           <li className='text-sm'>
             <Link href='/feedback'>
@@ -44,24 +44,26 @@ const Header = ({}: Props) => {
           className='shadow-sm block sm:hidden'
           onClick={toogleMobileNavigation}
         >
-          <FaBars size={16} />
+          <FaBars size={18} />
         </button>
       </div>
       <div
-        className={`${ mobileNavigation ? "-translate-y-48" : "translate-y-0" } bg-white py-4 shadow-md sm:hidden transition-all`}
+        className={`${
+          mobileNavigation ? "translate-y-0" : "-translate-y-48"
+        } bg-white py-4 shadow-md sm:hidden transition-all`}
       >
         <ul className='flex flex-col text-base gap-2 px-6'>
           {links.map((link, i) => (
-            <>
-              <li key={i} className='flex justify-between'>
-                <Link href={link.path}>{link.name}</Link>
+            <Link key={i} href={link.path} onClick={toogleMobileNavigation}>
+              <li className='flex justify-between mb-2'>
+                {link.name}
                 <span>&gt;</span>
               </li>
               <hr />
-            </>
+            </Link>
           ))}
           <li>
-            <Link href='/feedback'>Feedback</Link>
+            <Link href='/feedback' onClick={toogleMobileNavigation}>Feedback</Link>
           </li>
         </ul>
       </div>
