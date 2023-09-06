@@ -38,7 +38,7 @@ export default function Home() {
           </Link>{" "}
           from Palembang
         </p>
-        <div className="text-sm flex flex-col gap-4 pt-6 px-2 rounded-lg">
+        <div className="text-sm flex flex-col gap-4 pt-4 px-2 rounded-lg">
           <p className=''>
             Basically, I&apos;m just an ordinary man. I wrote ideas into a bunch
             of code.
