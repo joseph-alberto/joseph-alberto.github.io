@@ -18,7 +18,7 @@ const Footer = () => {
     <footer className='container flex flex-col gap-4 mx-auto py-12 px-4 text-gray-600 text-sm'>
       <hr />
       <div>
-        <span className=''>©</span> 2023
+        <span className=''>©</span> 2023{" "}
         <Link href={''}>Joseph&apos;s Web</Link>
       </div>
       <div>
