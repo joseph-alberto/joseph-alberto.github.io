@@ -43,7 +43,7 @@ export default function Home() {
             Basically, I&apos;m just an ordinary man. I wrote ideas into a bunch
             of code.
             <br />
-            Passionate to structure clean, neat, and sensible code with a new
+            Passionate to structure clean, neat, and sensible code with a modern
             technique for an advanced program.
             <br/>
           </p>
