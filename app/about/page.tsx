@@ -7,9 +7,9 @@ type Props = {}
 
 const Page = (props: Props) => {
   return (
-    <Container className='py-6'>
+    <Container className='py-20 sm:py-24'>
       <h1
-        className='text-4xl font-bold text-rose-400 mb-6'
+        className='text-2xl xs:text-3xl md:text-4xl font-bold text-rose-400 mb-6'
         style={{
           filter: "drop-shadow(-2px 3px 2px rgba(251, 113, 133, 0.5))",
         }}

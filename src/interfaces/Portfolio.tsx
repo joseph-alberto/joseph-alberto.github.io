@@ -4,5 +4,6 @@ export interface Portfolio {
   year: string
   type: string
   link: string | boolean
+  github_link: string | boolean
   description: string
 }

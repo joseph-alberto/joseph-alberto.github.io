@@ -15,7 +15,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className='container flex flex-col gap-4 mx-auto py-12 text-gray-600 text-sm'>
+    <footer className='container flex flex-col gap-4 mx-auto py-12 px-4 text-gray-600 text-sm'>
       <hr />
       <div>
         <span className=''>©</span> 2023{" "}

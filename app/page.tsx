@@ -6,15 +6,15 @@ import Link from "next/link"
 
 export default function Home() {
   const tea = (
-    <Image src={TeaImg} alt='' width={25} height={25} className='inline' />
+    <Image src={TeaImg} alt='' width={23} height={23} className='inline' />
   )
   const smile = (
-    <Image src={SmileImg} alt='' width={20} height={20} className='inline' />
+    <Image src={SmileImg} alt='' width={18} height={18} className='inline' />
   )
   return (
-    <Container className='py-8'>
+    <Container className='py-20 sm:py-24 px-4 md:px-16 xl:px-4'>
       <div className='bg-white py-10 flex flex-col gap-4 items-center text-center'>
-        <p className='text-4xl font-bold mb-2 border-b border-gray-200 border-dashed w-10/12 pb-6 leading-tight'>
+        <p className='text-2xl xs:text-3xl md:text-4xl font-bold mb-2 border-b border-gray-200 border-dashed w-10/12 pb-6 leading-tight'>
           Hi, I&apos;m{" "}
           <Link
             href='/about'
@@ -38,20 +38,23 @@ export default function Home() {
           </Link>{" "}
           from Palembang
         </p>
-        <p className='text-sm text-gray-600'>
-          Basically, I&apos;m just an ordinary man. I wrote ideas into a
-          bunch of code,
-          <br />
-          passionate to structure neat, clean, and sensible program with a new technique for an advanced society.
-          <br />
-        </p>
-        <p className='text-sm text-gray-600'>
-          So, that&apos;s our small chat. You&apos;ve been here
-          looking through my work result. Then, let me spill the tea {tea}.
-          <br />
-          Welcome to my art-work and don&apos;t hesitate to dig more about me {smile}.
-        </p>
-        <div className='flex gap-4 text-sm'>
+        <div className="md:px-0 text-sm flex flex-col gap-4">
+          <p className='text-gray-600'>
+            Basically, I&apos;m just an ordinary man. I wrote ideas into a bunch
+            of code,
+            <br className="hidden sm:block" />
+            passionate to structure neat, clean, and sensible program with a new
+            technique for an advanced society.
+            <br className="hidden sm:block" />
+          </p>
+          <p className='text-gray-600'>
+            So, that&apos;s our small chat. You&apos;ve been here looking
+            through my work result. Then, let me spill the tea {tea}.
+            Welcome to my art-work and don&apos;t hesitate to dig more about me{" "}
+            {smile}.
+          </p>
+        </div>
+        <div className='flex gap-4 text-xs sm:text-sm'>
           <Link href='/portfolio'>
             <button className='bg-cyan-400 text-white py-2 px-4 rounded-md hover:shadow-md hover:-translate-y-1 hover:shadow-cyan-400/50 hover:transition-transform transition-transform'>
               Work Result

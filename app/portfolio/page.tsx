@@ -10,9 +10,9 @@ type Props = {}
 const Page = (props: Props) => {
   const portfolios: Portfolio[] = data
   return (
-    <Container className='py-6'>
+    <Container className='py-20 sm:py-24 px-4 md:px-24 xl:px-4'>
       <h1
-        className='text-4xl font-bold text-cyan-400 inline-block mb-6'
+        className='text-2xl xs:text-3xl md:text-4xl font-bold text-cyan-400 inline-block mb-4'
         style={{
           filter: "drop-shadow(-2px 3px 2px rgba(45, 212, 191, 0.5))",
         }}
@@ -22,7 +22,7 @@ const Page = (props: Props) => {
       <p className='text-sm'>
         Over here you can see some of the work I&apos;ve created so far. Some project is made for my self and some of it&apos;s for the company or someone who ask me to create the application for their needs, please take a look *eye*.
       </p>
-      <div className='mt-8'>
+      <div className='mt-6'>
         <PortfolioContainer data={portfolios} />
       </div>
     </Container>
