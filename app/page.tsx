@@ -43,14 +43,14 @@ export default function Home() {
             Basically, I&apos;m just an ordinary man. I wrote ideas into a bunch
             of code.
             <br />
-            Passionate to structure neat, clean, and sensible program with a new
-            technique for an advanced society.
+            Passionate to structure clean, neat, and sensible code with a new
+            technique for an advanced program.
             <br/>
           </p>
           <p className=''>
             So, that&apos;s our small chat. You&apos;ve been here looking
-            through my work result. Then, let me spill the tea {tea}.<br />
-            Welcome to my art-work and don&apos;t hesitate to dig more about me{" "}
+            through my website. Then, let me spill the tea {tea}.<br />
+            Welcome to my art-work and don&apos;t hesitate to discover more thing about me{" "}
             {smile}.
           </p>
         </div>
