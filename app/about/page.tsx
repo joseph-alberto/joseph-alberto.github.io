@@ -17,11 +17,11 @@ const Page = (props: Props) => {
       >
         About
       </h1>
-      <div className='grid md:grid-cols-12 gap-10 md:gap-4 mb-20'>
-        <div className='w-80 md:w-auto col-span-3 md:col-span-6 lg:col-span-5 xl:col-span-4 h-72 bg-rose-50 rounded-md shadow-lg flex place-items-center justify-center place-self-center md:place-self-auto'>
+      <div className='grid md:grid-cols-12 gap-4 md:gap-4 mb-20'>
+        <div className='border w-80 md:w-auto col-span-3 md:col-span-6 lg:col-span-5 xl:col-span-4 h-72 bg-rose-50 rounded-md shadow-lg flex place-items-center justify-center place-self-center md:place-self-auto'>
           Photo
         </div>
-        <div className='col-span-3 md:col-span-6 lg:col-span-7 xl:col-span-8 text-sm'>
+        <div className='col-span-3 md:col-span-6 lg:col-span-7 xl:col-span-8 text-sm shadow-lg border rounded-md py-4 px-4'>
           <div className='text-xl font-bold mb-2'>Joseph Alberto</div>
           <div className="flex flex-col gap-4">
           <p>
