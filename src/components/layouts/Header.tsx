@@ -24,7 +24,7 @@ const Header = ({}: Props) => {
     <nav className='flex flex-col fixed w-full z-20'>
       <div className='flex justify-between py-3 px-4 z-20 md:px-24 items-center bg-white border rounded-b-md'>
         <h1 className='font-semibold'>
-          <Link href='/'>{`Joseph Web's`}</Link>
+          <Link href='/'>Joseph&apos;s Web</Link>
         </h1>
         <ul className='gap-8 items-center hidden sm:flex'>
           {links.map((link, i) => (
