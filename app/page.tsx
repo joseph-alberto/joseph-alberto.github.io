@@ -54,7 +54,7 @@ export default function Home() {
             {smile}.
           </p>
         </div>
-        <div className='flex w-full justify-center gap-2 text-xs sm:text-sm rounded-lg'>
+        <div className='flex w-full justify-center gap-2 text-sm rounded-lg'>
           <Link href='/portfolio'>
             <button className='bg-cyan-400 text-white py-2 px-4 rounded-md hover:shadow-md hover:-translate-y-1 hover:shadow-cyan-400/50 hover:transition-transform transition-transform'>
               Work Result
