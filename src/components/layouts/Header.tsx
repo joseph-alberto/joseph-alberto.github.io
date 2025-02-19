@@ -1,74 +1,74 @@
-"use client"
-import { useState } from "react"
-import Link from "next/link"
-import { FaBars } from "react-icons/fa6"
-type Props = {}
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import { FaBars } from "react-icons/fa6";
+import useScroll from "@/src/hooks/useScroll";
+import { useRouter } from "next/navigation";
+type Props = {};
 
 type LinksType = {
-  name: string | JSX.Element
-  path: string
-}[]
+    name: string | JSX.Element;
+    path: string;
+}[];
 
 const links: LinksType = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Portfolio", path: "/portfolio" },
-]
+    { name: "Home", path: "#home" },
+    { name: "About", path: "#about" },
+    { name: "Portfolio", path: "#portfolio" },
+];
 
 const Header = ({}: Props) => {
-  const [mobileNavigation, setmobileNavigation] = useState(false)
-  const toogleMobileNavigation = () => {
-    setmobileNavigation(!mobileNavigation)
-  }
-  return (
-    <nav className='flex flex-col fixed w-full z-20'>
-      <div className='flex justify-between py-3 px-4 z-20 md:px-24 items-center bg-white border rounded-b-md'>
-        <h1 className='font-semibold'>
-          <Link href='/'>Joseph&apos;s Web</Link>
-        </h1>
-        <ul className='gap-8 items-center hidden sm:flex'>
-          {links.map((link, i) => (
-            <Link key={i} href={link.path}>
-              <li className='text-sm'>{link.name}</li>
-            </Link>
-          ))}
-          <li className='text-sm'>
-            <Link href='/feedback'>
-              <button className='border hover:bg-gray-100 py-2 px-4 rounded-md hover:shadow transition-colors'>
-                Feedback
-              </button>
-            </Link>
-          </li>
-        </ul>
-        <button
-          className='shadow-sm block sm:hidden'
-          onClick={toogleMobileNavigation}
-        >
-          <FaBars size={18} />
-        </button>
-      </div>
-      <div
-        className={`${
-          mobileNavigation ? "translate-y-0" : "-translate-y-48"
-        } bg-white py-4 shadow-md sm:hidden transition-all`}
-      >
-        <ul className='flex flex-col text-base gap-2 px-6'>
-          {links.map((link, i) => (
-            <Link key={i} href={link.path} onClick={toogleMobileNavigation}>
-              <li className='flex justify-between mb-2'>
-                {link.name}
-                <span>&gt;</span>
-              </li>
-              <hr />
-            </Link>
-          ))}
-          <li>
-            <Link href='/feedback' onClick={toogleMobileNavigation}>Feedback</Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  )
-}
+    const router = useRouter();
+    const { isScrollDown } = useScroll();
+    const [mobileNavigation, setmobileNavigation] = useState(false);
 
-export default Header
+    const toggleMobileNavigation = () => {
+        setmobileNavigation(!mobileNavigation);
+    };
+
+    const handleNavItemOnClick = (path: string) => {
+        setmobileNavigation(false);
+        router.push(path);
+    };
+
+    return (
+        <nav className="fixed top-4 z-10 w-full px-2">
+            <div
+                className={`container mx-auto flex items-center justify-between rounded-full px-6 py-3 text-neutral-200 drop-shadow-lg transition-colors duration-300 md:px-12 ${isScrollDown ? "bg-neutral-700" : "bg-transparent"}`}
+            >
+                <h1 className="font-semibold">
+                    <Link href="/">Jo Digital Space</Link>
+                </h1>
+                <ul className="hidden items-center gap-8 sm:flex">
+                    {links.map((link, i) => (
+                        <li key={i} onClick={() => handleNavItemOnClick(link.path)} className="cursor-pointer text-sm">
+                            {link.name}
+                        </li>
+                    ))}
+                </ul>
+                <button className="block shadow-sm sm:hidden" onClick={toggleMobileNavigation}>
+                    <FaBars size={18} />
+                </button>
+            </div>
+            {mobileNavigation && (
+                <div className="aboslute container mx-auto px-8">
+                    <div className="mt-4 rounded-lg bg-neutral-700 px-6 py-6 shadow-2xl">
+                        <ul className="flex flex-col gap-6">
+                            {links.map((link, i) => (
+                                <li
+                                    key={i}
+                                    onClick={() => handleNavItemOnClick(link.path)}
+                                    className="cursor-pointer text-sm text-neutral-200 transition-colors hover:text-neutral-400"
+                                >
+                                    {link.name}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            )}
+        </nav>
+    );
+};
+
+export default Header;

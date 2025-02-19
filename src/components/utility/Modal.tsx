@@ -1,6 +1,5 @@
 'use client'
 import React from "react"
-import Container from "../Container"
 import { useRouter } from "next/navigation"
 
 type Props = {
@@ -34,7 +33,7 @@ const Modal = ({
 
   return (
     <div className='fixed top-0 w-full h-screen bg-gray-900/30 z-50'>
-      <Container className='pt-10'>
+      <div className='container mx-auto pt-10'>
         <div
           className={`bg-white ${classSize[size]} mx-auto py-2 rounded-md relative`}
         >
@@ -58,7 +57,7 @@ const Modal = ({
             </div>
           )}
         </div>
-      </Container>
+      </div>
     </div>
   )
 }
