@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import HighlightText from "@/src/components/utility/HighlightText";
+import Image from "next/image";
 
 const AboutSection = () => {
     return (
@@ -10,8 +11,15 @@ const AboutSection = () => {
                 <HighlightText text="About" variant="secondary" />
             </h1>
             <div className="grid gap-4 md:grid-cols-12 md:gap-4">
-                <div className="col-span-3 flex h-52 w-60 sm:h-72 sm:w-80 place-items-center justify-center place-self-center rounded-md bg-zinc-600 shadow-lg md:col-span-6 md:w-auto md:place-self-auto lg:col-span-5 xl:col-span-4">
-                    Photo
+                <div className="col-span-3 flex h-60 w-60 place-items-center justify-center place-self-center rounded-md bg-zinc-600 shadow-lg sm:h-80 sm:w-80 md:col-span-6 md:w-auto md:place-self-auto lg:col-span-5 xl:col-span-4">
+                    <Image
+                        src={`${process.env.NEXT_PUBLIC_URL}/images/about/photo3.jpeg`}
+                        priority={true}
+                        alt="Photo"
+                        className="w-full h-full object-cover object-[100%_30%]"
+                        width={0}
+                        height={0}
+                    />
                 </div>
                 <div className="col-span-3 rounded-md px-4 py-4 text-xs shadow-lg sm:text-sm md:col-span-6 md:py-0 lg:col-span-7 xl:col-span-8">
                     <div className="mb-2 text-xl font-bold">Joseph Alberto</div>

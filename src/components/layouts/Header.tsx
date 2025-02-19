@@ -37,7 +37,7 @@ const Header = ({}: Props) => {
                 className={`container mx-auto flex items-center justify-between rounded-full pl-6 pr-2 sm:px-6 py-2 sm:py-4 text-neutral-200 transition-colors duration-300 md:px-12 ${isScrollDown ? "bg-neutral-700" : "bg-transparent"}`}
             >
                 <h1 className="font-semibold">
-                    <Link href="/">Jo Digital Space</Link>
+                    <Link href="/">Joseph Alberto</Link>
                 </h1>
                 <ul className="hidden items-center gap-8 sm:flex">
                     {links.map((link, i) => (
