@@ -34,7 +34,7 @@ const Header = ({}: Props) => {
     return (
         <nav className="fixed top-4 z-10 w-full px-2">
             <div
-                className={`container mx-auto flex items-center justify-between rounded-full px-6 py-3 text-neutral-200 drop-shadow-lg transition-colors duration-300 md:px-12 ${isScrollDown ? "bg-neutral-700" : "bg-transparent"}`}
+                className={`container mx-auto flex items-center justify-between rounded-full pl-6 pr-2 sm:px-6 py-2 sm:py-4 text-neutral-200 transition-colors duration-300 md:px-12 ${isScrollDown ? "bg-neutral-700" : "bg-transparent"}`}
             >
                 <h1 className="font-semibold">
                     <Link href="/">Jo Digital Space</Link>
@@ -46,8 +46,8 @@ const Header = ({}: Props) => {
                         </li>
                     ))}
                 </ul>
-                <button className="block shadow-sm sm:hidden" onClick={toggleMobileNavigation}>
-                    <FaBars size={18} />
+                <button className="block sm:hidden rounded-full hover:bg-neutral-600 p-4" onClick={toggleMobileNavigation}>
+                    <FaBars size={14} />
                 </button>
             </div>
             {mobileNavigation && (
