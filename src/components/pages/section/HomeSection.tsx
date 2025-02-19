@@ -13,7 +13,7 @@ const HomeSection = () => {
     const smile = <Image src={SmileImg} alt="" width={18} height={18} className="inline" />;
 
     return (
-        <div className="flex min-h-screen flex-col items-center gap-4 px-4 pt-32 text-center sm:pt-40">
+        <div className="flex min-h-screen flex-col items-center gap-4 px-4 pt-40 text-center">
             <p className="w-10/12 text-2xl font-bold leading-tight sm:text-3xl">
                 Hi, I&apos;m{" "}
                 <span className="text-nowrap">
